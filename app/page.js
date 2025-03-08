@@ -1,101 +1,93 @@
-import Image from "next/image";
+import ChartCard from "@/components/custom/ChartCard";
+import CSvg from "@/components/customsvg/csvg";
+import GoSvg from "@/components/customsvg/gosvg";
+import HtmlSvg from "@/components/customsvg/htmlsvg";
+import JavaScriptSvg from "@/components/customsvg/javascriptSvg";
+import JavaSvg from "@/components/customsvg/javasvg";
+import KotlinSvg from "@/components/customsvg/kotlinsvg";
+import ReactSvg from "@/components/customsvg/reactsvg";
+import RustSvg from "@/components/customsvg/rustsvg";
 
-export default function Home() {
+const { BackgroundLines } = require("@/components/ui/background-lines");
+
+function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <BackgroundLines
+      svgOptions={{ duration: 10 }}
+      className="flex flex-col items-center justify-center bg-black"
+    >
+      <div className="grid grid-rows-10 grid-cols-3 gap-3 z-10 ">
+        <div className="row-span-3 col-start-1 row-start-1 col-span-2 bg-[#1a1a1a] text-white p-4 rounded-lg w-[550px]">
+          <h2 className="font-extrabold text-2xl ">Who am I?</h2>
+          <h2 className="font-light break-words">Hey! My name is Darwin Koirala, I am a Full Stack Developer and currently a student. I specialize in Web development along with android development. I have have Knowledge about backend and its developments. I use react tailwindcss for front end, jetpack compose for android development and golang for backend development</h2>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+
+        <div className="row-span-4 row-start-1 col-span-1 col-start-3 bg-[#1a1a1a] text-white rounded-lg">
+          <img
+            src="wallpaper.jpg"
+            className="w-[270px] h-full object-cover rounded-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+
+        <div className=" flex flex-col col-start-1 row-start-4 litems-center justify-center row-span-2 col-span-1 text-white p-3 rounded-lg max-w-[270px] bg-cyan-900">
+          <h2 className="text-center text-white font-extrabold text-2xl">
+            Student &
+          </h2>
+          <h2 className="text-center text-white font-extrabold text-2xl">
+            Full Stack Developer
+          </h2>
+        </div>
+
+        <div className="h-[200px] w-[270px] row-span-4 col-span-1 col-start-2 row-start-4 bg-[#1a1a1a] text-white p-4 rounded-lg flex justify-center items-center flex-col gap-3">
+          <img src="profile.png" className="max-w-[80px] rounded-4xl" />
+          <h2 className="text-3xl font-extrabold text-cyan-600">
+            Darwin koirala
+          </h2>
+        </div>
+
+        <div className="w-[270px] h-[300px] flex flex-col row-span-6 col-start-1 row-start-6 col-span-1 bg-[#1a1a1a] text-white p-4 rounded-lg gap-4">
+          <h2 className="font-bold text-xl ">
+            Technologies I Have Worked With
+          </h2>
+          <div className="flex gap-2 flex-wrap w-[270px] pr-4">
+            <ChartCard Png={JavaScriptSvg} name="JavaScript" />
+            <ChartCard Png={ReactSvg} name="React" />
+            <ChartCard Png={KotlinSvg} name="Kotlin" />
+            <ChartCard Png={KotlinSvg} name="JepackCompose" />
+            <ChartCard Png={HtmlSvg} name="Html/CSS" />
+            <ChartCard Png={GoSvg} name="Golang" />
+            <ChartCard Png={JavaSvg} name="Java" />
+            <ChartCard Png={CSvg} name="C" />
+            <ChartCard Png={RustSvg} name="Rust" />
+          </div>
+        </div>
+
+        <div className="flex items-center row-span-2 row-start-5  col-start-3 col-span-1 text-white p-3 rounded-lg max-w-[270px] bg-cyan-900">
+          <h2 className="text-center text-white font-extrabold text-2xl">
+            "The only way to do great work is to love what you do."
+          </h2>
+        </div>
+        <div className="row-span-4 col-start-2 row-start-7 col-span-2 bg-[#1a1a1a]  text-white p-4 rounded-lg flex flex-col w-[550px] h-[230px]">
+          <h2 className="font-extrabold text-2xl ">Education</h2>
+          <div className="flex gap-1 mt-3">
+            <h2 className="break-words text-lg font-bold">BSCIT </h2>
+            <h2 className="font-light"> (2024-Current)</h2>
+          </div>
+          <h1 className="font-light">
+            I am currently attending first semester in Apex college affiliated
+            with Pokhara University
+          </h1>
+          <div className="flex gap-1 mt-3">
+            <h2 className="break-words text-lg font-bold">Highschool</h2>
+            <h2 className="font-light"> (2022-2024)</h2>
+          </div>
+          <h1 className="font-light">
+            I completed my Highschool in law from Liverpool Internation College
+          </h1>
+        </div>
+      </div>
+    </BackgroundLines>
   );
 }
+
+export default Home;

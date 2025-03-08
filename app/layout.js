@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Import Google Fonts (Geist Sans and Geist Mono)
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,10 +20,42 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Simple Clean Layout</title>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        {children}
+        <nav className="w-full text-white flex justify-center items-center rounded-md shadow-lg mt-20 fixed z-10">
+          <ul className="flex w-fit space-x-8 bg-[#191919] p-2.5 rounded-xl ">
+            <li className="group">
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+              >
+                Home
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+              >
+                Projects
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main>{children}</main>
       </body>
     </html>
   );
