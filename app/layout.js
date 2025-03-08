@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        <nav className="w-full text-white flex justify-center items-center bg-black z-11">
+        <nav className="w-full text-white flex justify-center items-center bg-black z-11 max-h-fit">
           <ul className="flex w-fit space-x-8 bg-[#191919] z-11 p-2.5 rounded-xl mt-10 ">
             <li className="group">
               <a

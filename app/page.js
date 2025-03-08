@@ -13,10 +13,10 @@ const { BackgroundLines } = require("@/components/ui/background-lines");
 function Home() {
   return (
     <BackgroundLines
-      svgOptions={{ duration: 10 }}
-      className="flex flex-col items-center justify-center bg-black"
+      svgOptions={{ duration: 5 }}
+      className="flex flex-col items-center justify-start bg-black"
     >
-      <div className="grid grid-rows-10 grid-cols-3 gap-3 z-10 ">
+      <div className="grid grid-rows-10 grid-cols-3 gap-3 z-10 mt-20">
         <div className="row-span-3 col-start-1 row-start-1 col-span-2 bg-[#1a1a1a] text-white p-4 rounded-lg w-[550px]">
           <h2 className="font-extrabold text-2xl ">Who am I?</h2>
           <h2 className="font-light break-words">Hey! My name is Darwin Koirala, I am a Full Stack Developer and currently a student. I specialize in Web development along with android development. I have have Knowledge about backend and its developments. I use react tailwindcss for front end, jetpack compose for android development and golang for backend development</h2>
