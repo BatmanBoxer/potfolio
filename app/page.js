@@ -5,6 +5,7 @@ import GoSvg from "@/components/customsvg/gosvg";
 import HtmlSvg from "@/components/customsvg/htmlsvg";
 import JavaScriptSvg from "@/components/customsvg/javascriptSvg";
 import JavaSvg from "@/components/customsvg/javasvg";
+import JetpackComposeSvg from "@/components/customsvg/jetpackcomposeSvg";
 import KotlinSvg from "@/components/customsvg/kotlinsvg";
 import ReactSvg from "@/components/customsvg/reactsvg";
 import RustSvg from "@/components/customsvg/rustsvg";
@@ -40,7 +41,7 @@ function Home() {
             specialize in web development using React and Tailwind CSS for the
             frontend, and Android development with Jetpack Compose. I also have
             experience in backend development with Golang, allowing me to build
-            efficient and scalable applications.
+            efficient and scalable applications.I also build desktop apps with Rust and Tauri
           </h2>
         </motion.div>
 
@@ -129,7 +130,7 @@ function Home() {
             <ChartCard Png={JavaScriptSvg} name="JavaScript" />
             <ChartCard Png={ReactSvg} name="React" />
             <ChartCard Png={KotlinSvg} name="Kotlin" />
-            <ChartCard Png={KotlinSvg} name="JepackCompose" />
+            <ChartCard Png={JetpackComposeSvg} name="JetpackCompose" />
             <ChartCard Png={HtmlSvg} name="Html/CSS" />
             <ChartCard Png={GoSvg} name="Golang" />
             <ChartCard Png={JavaSvg} name="Java" />
@@ -148,6 +149,7 @@ function Home() {
             x: 0,
           }}
           transition={{
+            delay:0.4,
             ease: "easeIn",
             duration: 0.4,
           }}
