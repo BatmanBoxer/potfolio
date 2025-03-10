@@ -149,7 +149,7 @@ function Home() {
             x: 0,
           }}
           transition={{
-            delay:0.4,
+            delay:0.05,
             ease: "easeIn",
             duration: 0.4,
           }}
