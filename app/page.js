@@ -36,11 +36,11 @@ function Home() {
         >
           <h2 className="font-extrabold text-2xl ">Who am I?</h2>
           <h2 className="font-light break-words">
-            Hey! My name is Darwin Koirala, I am a Full Stack Developer and
-            currently a student. I specialize in Web development along with
-            android development. I have have Knowledge about backend and its
-            developments. I use react tailwindcss for front end, jetpack compose
-            for android development and golang for backend development
+            Hi, I’m Darwin Koirala, a Full Stack Developer and a student. I
+            specialize in web development using React and Tailwind CSS for the
+            frontend, and Android development with Jetpack Compose. I also have
+            experience in backend development with Golang, allowing me to build
+            efficient and scalable applications.
           </h2>
         </motion.div>
 
