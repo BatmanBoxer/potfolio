@@ -26,36 +26,41 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        <nav className="w-full text-white flex justify-center items-center bg-black z-11 max-h-fit">
-          <ul className="flex w-fit space-x-8 bg-[#191919] z-11 p-2.5 rounded-xl mt-10 ">
-            <li className="group">
-              <a
-                href="#"
-                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
-              >
-                Home
-              </a>
-            </li>
-            <li className="group">
-              <a
-                href="#"
-                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
-              >
-                Projects
-              </a>
-            </li>
-            <li className="group">
-              <a
-                href="#"
-                className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="flex md:hidden bg-black items-center justify-center h-[100vh]">
+          <h1 className="text-white font-bold text-2xl text-center">Please visit using your Laptop or Computer</h1>
+        </div>
+        <div className="hidden md:block">
+          <nav className="w-full text-white flex justify-center items-center bg-black z-11 max-h-fit">
+            <ul className="flex w-fit space-x-8 bg-[#191919] z-11 p-2.5 rounded-xl mt-10 ">
+              <li className="group">
+                <a
+                  href="#"
+                  className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="group">
+                <a
+                  href="#"
+                  className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="group">
+                <a
+                  href="#"
+                  className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <main>{children}</main>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

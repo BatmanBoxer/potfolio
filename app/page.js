@@ -16,7 +16,7 @@ function Home() {
   return (
     <BackgroundLines
       svgOptions={{ duration: 5 }}
-      className="flex flex-col items-center justify-start bg-black"
+      className="flex flex-col items-center justify-start bg-black "
     >
       <div className="grid grid-rows-10 grid-cols-3 gap-3 z-10 mt-20 cursor-default">
         <motion.div
