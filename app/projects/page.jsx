@@ -42,7 +42,7 @@ const projects = [
 ];
 const Projects = () => {
   return (
-    <div className="bg-black h-[100vh]">
+    <div className="bg-black h-[100vh] flex mt-9 ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

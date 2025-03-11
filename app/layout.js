@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
       >
-        <BackgroundLines svgOptions={{ duration: 5 }}>
+        <BackgroundLines svgOptions={{ duration: 5 }} className="bg-black"> 
           <div className="flex md:hidden bg-black items-center justify-center h-[100vh]">
             <h1 className="text-white font-bold text-2xl text-center">
               Please visit using your Laptop or Computer
