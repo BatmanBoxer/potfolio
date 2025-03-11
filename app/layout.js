@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
                 </li>
                 <li className="group">
                   <a
-                    href="/contact"
+                    href="/contacts"
                     className="text-white hover:text-gray-300 transition-colors text-lg font-medium tracking-widest px-4 py-2 rounded-md group-hover:bg-gray-800"
                   >
                     Contact
