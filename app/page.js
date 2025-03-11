@@ -11,13 +11,11 @@ import ReactSvg from "@/components/customsvg/reactsvg";
 import RustSvg from "@/components/customsvg/rustsvg";
 import { motion } from "motion/react";
 
-const { BackgroundLines } = require("@/components/ui/background-lines");
 
 function Home() {
   return (
-    <BackgroundLines
-      svgOptions={{ duration: 5 }}
-      className="flex flex-col items-center justify-start bg-black "
+    <div
+      className="flex flex-col items-center justify-start bg-black h-[100vh] w-full overflow-hidden"
     >
       <div className="grid grid-rows-10 grid-cols-3 gap-3 z-10 mt-20 cursor-default">
         <motion.div
@@ -192,7 +190,7 @@ function Home() {
           </h1>
         </motion.div>
       </div>
-    </BackgroundLines>
+    </div>
   );
 }
 
